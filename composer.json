@@ -1,0 +1,14 @@
+{
+    "name": "craigmccoy/otto-example-php",
+    "description": "An example PHP application for testing Otto https://www.ottoproject.io",
+    "keywords": ["php", "otto"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=5.5.9",
+        "fzaninotto/faker": "~1.4"
+    },
+    "config": {
+        "preferred-install": "dist"
+    }
+}
