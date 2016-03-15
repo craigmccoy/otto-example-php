@@ -37,11 +37,11 @@ $faker = Faker\Factory::create();
 	<div class="medium-8 columns">
 		<?php for($i = 0; $i < 3; $i++): ?>
 		<div class="blog-post">
-			<h3><?= $faker->words($faker->numberBetween(3, 7)); ?>
+			<h3><?= $faker->words($faker->numberBetween(3, 7), TRUE); ?>
 				<small><?= $faker->date('m/d/Y'); ?></small>
 			</h3>
 			<img class="thumbnail" src="<?= $faker->imageUrl(850, 350); ?>">
-			<p><?= $faker->sentences(); ?></p>
+			<p><?= $faker->sentences(3, TRUE); ?></p>
 			<div class="callout">
 				<ul class="menu simple">
 					<li><a href="#">Author: <?= $faker->name; ?></a></li>
